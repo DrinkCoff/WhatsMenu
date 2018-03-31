@@ -1,4 +1,6 @@
-﻿using System;
+﻿using WhatsMenu.ViewModel;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,8 @@ namespace WhatsMenu
 		public MainPage()
 		{
 			InitializeComponent();
+
+            BindingContext = new AddItemViewModel();
 		}
 	}
 }
